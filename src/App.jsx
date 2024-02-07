@@ -40,14 +40,15 @@ const LoadingFallback = () => {
         animate={{ opacity: progress > 50 ? 0 : 1 }}
         transition={{ duration: 0.5 }}
       >
-        <p className="text-black text-2xl font-bold animate-pulse">{(progress).toFixed(0)}%</p>
+        <p className="text-black text-2xl font-bold animate-pulse">
+          {progress.toFixed(0)}%
+        </p>
       </motion.div>
     </div>
   );
 };
 
 function App() {
-
   return (
     <div className="absolute w-full h-full ">
       <Suspense fallback={<LoadingFallback />}>
@@ -60,7 +61,7 @@ function App() {
             preset="rembrandt"
           >
             <Model />
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={true} enablePan={false} />
           </Stage>
           <Environment files="environment.hdr" background />
           <ambientLight intensity={2} />
