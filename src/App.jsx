@@ -109,6 +109,7 @@ function App() {
             </ul>
           </div>
         </button>
+        <img src="wise-logo.png" className="absolute left-5 top-5 w-12 object-contain" />
         <div className="w-full h-full absolute left-0 top-0 -z-10 pointer-events-none">
           <img src="bg_no_logo.png" className="w-full h-full object-cover" />
         </div>
