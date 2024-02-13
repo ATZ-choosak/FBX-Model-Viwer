@@ -110,7 +110,7 @@ function App() {
           </div>
         </button>
         <div className="w-full h-full absolute left-0 top-0 -z-10 pointer-events-none">
-          <img src="bg.png" className="w-full h-full object-cover" />
+          <img src="bg_no_logo.png" className="w-full h-full object-cover" />
         </div>
         <Canvas
           onMouseUp={() => setClick(false)}
